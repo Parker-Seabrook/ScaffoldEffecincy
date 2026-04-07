@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scaffold Efficiency Program</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Scaffold Efficiency Program</h1>
+      <p class="subtitle">Material Utilization and Billing Control</p>
+    </div>
+    <div class="topbar-meta">
+      <div id="projectName"></div>
+      <div id="lastUpdated"></div>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabNav">
+    <button data-tab="dashboard" class="tab-btn active">Dashboard</button>
+    <button data-tab="scaffolds" class="tab-btn">Scaffold Registry</button>
+    <button data-tab="materials" class="tab-btn">Material Tracker</button>
+    <button data-tab="billing" class="tab-btn">Billing / Cost Engine</button>
+    <button data-tab="alerts" class="tab-btn">Alerts / Optimization</button>
+    <button data-tab="admin" class="tab-btn">Admin / Rate Settings</button>
+  </nav>
+
+  <main>
+    <section id="dashboard" class="tab-panel active"></section>
+    <section id="scaffolds" class="tab-panel"></section>
+    <section id="materials" class="tab-panel"></section>
+    <section id="billing" class="tab-panel"></section>
+    <section id="alerts" class="tab-panel"></section>
+    <section id="admin" class="tab-panel"></section>
+  </main>
+
+  <footer class="footer">
+    <span>Folder-mode app: runs directly from <code>index.html</code> with no localhost server.</span>
+  </footer>
+
+  <script src="data/rates.js"></script>
+  <script src="data/seedData.js"></script>
+  <script src="utils/dateUtils.js"></script>
+  <script src="utils/storage.js"></script>
+  <script src="utils/billingEngine.js"></script>
+  <script src="components/templates.js"></script>
+  <script src="components/renderers.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
