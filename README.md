@@ -9,6 +9,19 @@ It runs directly from the project folder with **no localhost server**, no build 
 2. Double-click `index.html` (or right-click and open in your browser).
 3. The app runs in `file://` mode and uses browser `localStorage` for persistence.
 
+## How to run from GitHub (GitHub Pages)
+
+Important: opening `index.html` inside the GitHub repository file viewer does not run the app.
+GitHub shows source files there, not an executing web app.
+
+Use GitHub Pages:
+
+1. Open repository **Settings** > **Pages**.
+2. Under **Build and deployment**, select **Source: GitHub Actions**.
+3. Push to `main` (or re-run the workflow) and wait for workflow `Deploy static app to GitHub Pages` to finish.
+4. Open the site URL:
+   `https://<your-github-username>.github.io/ScaffoldEffecincy/`
+
 ## Folder structure
 
 - `index.html`: App shell and tab layout
